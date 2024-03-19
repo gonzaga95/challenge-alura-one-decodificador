@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+:root {
+    --dark-blue: #0a3871;
+    --ultra-dark-blue: #051d49;
+    --medium-gray: #495057;
+    --page: #e5e5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--page);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 95vh;
+}
+
+header {
+    width: 17vw;
+    display: flex;
+    align-items: baseline;
+}
+
+header img {
+    width: 50%;
+    height: 6%;
+    margin-top: 20%;
+    margin-left: 17%;
+}
+
+.area_texto {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.area_texto textarea {
+    width: 88%;
+    height: 65%;
+    margin-top: 15%;
+    background-color: transparent;
+    color: var(--dark-blue);
+    font-size: 2rem;
+    outline: 0;
+    resize: none;
+    border: none;
+}
+
+textarea::placeholder {
+    color: var(--dark-blue);
+}
+
+.area_texto_buttons {
+    width: 88%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.area_texto_buttons span {
+    height: 15%;
+    margin-top: 7%;
+    display: flex;
+    font-size: 14px;
+    color: var(--medium-gray);
+    align-items: center;
+}
+
+.area_texto_buttons img {
+    width: 4%;
+    height: 50%;
+}
+
+.area_texto_buttons button {
+    width: 49%;
+    height: 47%;
+    border-radius: 24px;
+    font-size: 1.25rem;
+    border-width: 2px;
+    cursor: pointer;
+    border: 1px solid var(--dark-blue);
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 3px 7px var(--ultra-dark-blue);
+}
+
+.buttons {
+    height: 85%;
+    margin-top: 1%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.encriptar {
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+.decriptar {
+    color: var(--dark-blue);
+    background-color: #d8dfe8;
+    border-color: var(--dark-blue);
+}
+
+.lateral_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 24vw;
+    height: 92%;
+    margin-top: 2%;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 32px;
+    gap: 1%;
+    padding: 2%;
+}
+
+.lateral_texto img {
+    width: 100%;
+    height: 50%;
+}
+
+.lateral_texto h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.lateral_texto p {
+    font-size: 1rem;
+}
+
+.lateral_texto_resultado button {
+    width: 80%;
+    height: 9%;
+    margin-bottom: 10%;
+    border-radius: 24px;
+    font-size: 1.25rem;
+    border-width: 2px;
+    cursor: pointer;
+    border: 1px solid var(--dark-blue);
+    transition: box-shadow 0.3s ease;
+    background-color: transparent;
+}
+
+.lateral_texto_resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 24vw;
+    height: 92%;
+    margin-top: 2%;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.lateral_texto_resultado textarea {
+    width: 95%;
+    height: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: transparent;
+    color: var(--medium-gray);
+    font-size: 1.5rem;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 5%;
+}
+
+footer {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--dark-blue);
+    font-style: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--ultra-dark-blue);
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+@media (max-width: 650px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 10vh;
+        align-items: center;
+    }
+
+    header img {
+        width: 100%;
+        height: 50%;
+        margin-left: 5%;
+    }
+
+    .area_texto {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .area_texto textarea {
+        width: 100vw;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .area_texto span {
+        margin-left: 3%;
+    }
+
+    .area_texto_buttons {
+        width: 100vw;
+    }
+
+    .area_texto_buttons button {
+        width: 45%;
+        height: 80%;
+    }
+
+    .buttons {
+        justify-content: space-around;
+    }
+
+    .lateral_texto {
+        width: 95%;
+        height: 20vh;
+        align-self: center;
+        margin: 2% 2% 0% 2%;
+    }
+
+    .lateral_texto img {
+        display: none;
+    }
+
+    .lateral_texto_resultado {
+        width: 95%;
+        height: 20vh;
+        margin: 2% 2% 0% 2%;
+        gap: 2%;
+    }
+
+    .lateral_texto_resultado textarea {
+        width: 90%;
+        height: 90%;
+        margin: 0%;
+        margin-top: 2%;
+        background-color: transparent;
+        color: var(--medium-gray);
+        font-size: 1.5rem;
+        outline: none;
+        resize: none;
+    }
+
+    .lateral_texto_resultado button {
+        width: 70%;
+        height: 25%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 375px) {
+    .area_texto_buttons button {
+        width: 80%;
+        height: 45%;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
