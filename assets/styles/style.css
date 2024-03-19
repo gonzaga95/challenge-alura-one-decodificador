@@ -267,7 +267,7 @@ footer a {
         width: 95%;
         height: 20vh;
         align-self: center;
-        margin: 2% 2% 0% 2%;
+        margin: 2%;
     }
 
     .lateral_texto img {
@@ -277,7 +277,7 @@ footer a {
     .lateral_texto_resultado {
         width: 95%;
         height: 20vh;
-        margin: 2% 2% 0% 2%;
+        margin: 2%;
         gap: 2%;
     }
 
