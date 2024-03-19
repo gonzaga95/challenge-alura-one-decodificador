@@ -197,11 +197,11 @@ footer {
     height: 5vh;
     display: flex;
     justify-content: center;
-    align-content: center;
     text-align: center;
     font-size: 1.15rem;
     color: var(--dark-blue);
     font-style: normal;
+    gap: 0.2rem;
 }
 
 footer a {
