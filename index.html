@@ -8,18 +8,37 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <img src="" class="logo_alura" alt="Logo da Alura">
+    </header>
 
     <main>
-        <section class="inserir_texto">
-            <input type="text">
-            <input type="button" value="Codificar">
-            <input type="button" value="Descodificar">
+        <section class="area_texto">
+            <textarea onkeyup="checkText(event)" class="texto_entrada" placeholder="Digite seu texto aqui..."></textarea>
+
+            <div class="area_texto_buttons">
+                <span>
+                    <img src="" class="alert_texto" alt="Exclamação de alerta">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </span>
+
+                <div class="buttons">
+                    <button class="encriptar" onclick="encriptarBtn(),removeRightSideBar()">Criptografar</button>
+                    <button class="decriptar" onclick="decriptarBtn()">Descriptografar</button>
+                </div>
+            </div>
         </section>
 
-        <section class="revelar_texto">
+        <section class="lateral_texto">
             <div id="relevar_texto_img">
                 <img src="./assets/images/High quality products 1 1.svg" alt="Pessoa procurando algo com lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite à esquerda um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div class="lateral_texto_resultado" style="display: none;">
+                <textarea class="texto_saida"></textarea>
+                <button onclick="copy()" class="copy">Copiar</button>
             </div>
 
         </section>
@@ -29,5 +48,6 @@
     </footer>
 
 </body>
+<script src="./app.js"></script>
 
 </html>
